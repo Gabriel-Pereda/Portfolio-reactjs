@@ -1,0 +1,13 @@
+.navbar-nav .nav-link {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 700;
+    text-decoration: underline;
+}

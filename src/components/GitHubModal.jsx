@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/components/github-modal.css';
+import GitHubModal from '../components/GitHubModal';  // Update the correct path
+import '../styles/pages/home.css';
+
 
 function GitHubModal({ isOpen, onClose }) {
   const [githubData, setGithubData] = useState(null);
