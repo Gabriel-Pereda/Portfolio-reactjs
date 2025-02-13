@@ -6,22 +6,30 @@ function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="home-container">
-      <section className="hero-section">
-        <div className="overlay">
+    <div className="home">
+      <section className="hero">
+        <div className="hero-content">
           <h1>John DOE</h1>
           <h2>Développeur Web Full Stack</h2>
           <button 
-            className="btn btn-primary"
+            className="btn btn-primary btn-lg"
             onClick={() => setIsModalOpen(true)}
           >
             En savoir plus
           </button>
         </div>
       </section>
+
+      <section className="about-section">
+        <div className="container">
+          <h2 className="text-center mb-5">À propos</h2>
+          {/* Add about content */}
+        </div>
+      </section>
+
       <GitHubModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
       />
     </div>
   );
