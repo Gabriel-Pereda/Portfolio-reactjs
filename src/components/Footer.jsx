@@ -4,7 +4,7 @@ import '../styles/components/footer.css'
 
 function Footer () {
   return (
-    <footer className='footer bg-light py-5'>
+    <footer className='footer bg-dark text-light py-5'>
       <div className='container'>
         <div className='row'>
           {/* Contact Info */}
@@ -13,20 +13,26 @@ function Footer () {
             <p>123 Rue Example<br/>75000 Paris</p>
             <p>+33 1 23 45 67 89</p>
             <div className='social-links'>
-              <a href='https://github.com/github-john-doe'
+              <a 
+                href='https://github.com/github-john-doe'
                 target='_blank'
-                rel='noopener noreferrer'>
-                <i className='fab fa-github' />
+                rel='noopener noreferrer'
+              >
+                <i className='bi bi-github'></i>
               </a>
-              <a href='https://twitter.com/john-doe'
+              <a 
+                href='https://twitter.com/john-doe'
                 target='_blank'
-                rel='noopener noreferrer'>
-                <i className='fab fa-twitter' />
+                rel='noopener noreferrer'
+              >
+                <i className='bi bi-twitter'></i>
               </a>
-              <a href='https://linkedin.com/in/john-doe'
+              <a 
+                href='https://linkedin.com/in/john-doe'
                 target='_blank'
-                rel='noopener noreferrer'>
-                <i className='fab fa-linkedin' />
+                rel='noopener noreferrer'
+              >
+                <i className='bi bi-linkedin'></i>
               </a>
             </div>
           </div>
