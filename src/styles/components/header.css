@@ -1,7 +1,17 @@
-.navbar-nav .nav-link {
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
+.navbar {
+    padding: 0.5rem 0; /* Reduced padding */
+    min-height: auto;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem; /* Smaller brand text */
+  }
+
+
+  .navbar-nav .nav-link {
+    padding: 0.4rem 1rem; 
+    font-size: 0.9rem;
+  }
 
 .navbar-nav .nav-link:hover {
     text-decoration: underline;
