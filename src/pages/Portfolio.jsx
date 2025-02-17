@@ -1,49 +1,61 @@
 import React from 'react'
 import '../styles/pages/portfolio.css'
+import freshFoodImg from '../assets/images/portfolio/fresh-food.jpg'
+import restaurantJaponaisImg from '../assets/images/portfolio/restaurant-japonais.jpg'
+import espaceBienEtreImg from '../assets/images/portfolio/espace-bien-etre.jpg'
+import seoImg from '../assets/images/portfolio/seo.jpg'
+import apiImg from '../assets/images/portfolio/coder.jpg'
+import maquetteImg from '../assets/images/portfolio/screens.jpg'
 
 function Portfolio () {
   const projects = [
     {
       id: 1,
-      title: 'E-commerce Website',
-      description: 'Site e-commerce développé avec React et Node.js, intégrant Stripe pour les paiements.',
-      image: '/assets/images/projects/ecommerce.jpg',
-      link: 'https://github.com/username/ecommerce'
+      title: 'Fresh Food',
+      description: 'Site de vente de produits frais en lignes',
+      image: freshFoodImg,
+      link: '#',
+      languages: ['Site réalisé avec PHP et MySQL']
     },
     {
       id: 2,
-      title: 'Task Manager',
-      description: 'Application de gestion de tâches avec React et Firebase.',
-      image: '/assets/images/projects/taskmanager.jpg',
-      link: 'https://github.com/username/taskmanager'
+      title: 'Restaurant Akira',
+      description: 'Site de vente de produits frais en lignes',
+      image: restaurantJaponaisImg,
+      link: '#',
+      languages: ['Site réalisé avec WordPress']
     },
     {
       id: 3,
-      title: 'Weather App',
-      description: 'Application météo utilisant l\'API OpenWeather.',
-      image: '/assets/images/projects/weather.jpg',
-      link: 'https://github.com/username/weather-app'
+      title: 'Espace bien-être',
+      description: 'Site de vente de produits frais en lignes',
+      image: espaceBienEtreImg,
+      link: '#',
+      languages: ['Site réalisé avec LARAVEL']
     },
     {
       id: 4,
-      title: 'Portfolio',
-      description: 'Portfolio personnel développé avec React et Bootstrap.',
-      image: '/assets/images/projects/portfolio.jpg',
-      link: 'https://github.com/username/portfolio'
+      title: 'SEO',
+      description: 'Amélioration du référencement d\'un site e-commerce',
+      image: seoImg,
+      link: '#',
+      languages: ['Utilisation des outils SEO']
     },
     {
       id: 5,
-      title: 'Blog Platform',
-      description: 'Plateforme de blog avec système de gestion de contenu.',
-      image: '/assets/images/projects/blog.jpg',
-      link: 'https://github.com/username/blog'
+      title: 'Création d\'un API',
+      description: 'Création d\'une API pour un site e-commerce',
+      image: apiImg,
+      link: '#',
+      languages: ['PHP - SYMFONY']
     },
     {
       id: 6,
-      title: 'Chat Application',
-      description: 'Application de chat en temps réel avec Socket.io.',
-      image: '/assets/images/projects/chat.jpg',
-      link: 'https://github.com/username/chat-app'
+      title: 'Maquette d\'un site',
+      description: 'Création du prototype d\'un site',
+      image: maquetteImg,
+      link: '#',
+      languages: ['Réalisé avec FIGMA']
     }
   ]
 
@@ -53,14 +65,17 @@ function Portfolio () {
       <div className='row g-4'>
         {projects.map(project => (
           <div key={project.id} className='col-md-4'>
-            <div className='card h-100'>
+           <div className='card h-100'>
               <img src={project.image} className='card-img-top' alt={project.title} />
               <div className='card-body'>
                 <h3 className='card-title h5'>{project.title}</h3>
                 <p className='card-text'>{project.description}</p>
-                <a href={project.link} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>
+                <a href={project.link} className='btn btn-primary mb-3' target='_blank' rel='noopener noreferrer'>
                   Voir le projet
                 </a>
+                <div className='languages-container'>
+                  {project.languages.join(' • ')}
+                </div>
               </div>
             </div>
           </div>

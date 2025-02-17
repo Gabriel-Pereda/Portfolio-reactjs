@@ -10,35 +10,25 @@ function Footer () {
           {/* Contact Info */}
           <div className='col-md-4'>
             <h5>John DOE</h5>
-            <p>123 Rue Example<br/>75000 Paris</p>
-            <p>+33 1 23 45 67 89</p>
+            <p>40 rue Laure Diebold</p>
+            <p>690009 Lyon, France</p>
+            <p>10 20 30 40 50</p>
+            <p>john.doe@gmail.com</p>
             <div className='social-links'>
-              <a 
-                href='https://github.com/github-john-doe'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
+              <a href='https://github.com/github-john-doe'target='_blank'rel='noopener noreferrer'>
                 <i className='bi bi-github'></i>
               </a>
-              <a 
-                href='https://twitter.com/john-doe'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
+              <a href='https://twitter.com/john-doe'target='_blank'rel='noopener noreferrer'>
                 <i className='bi bi-twitter'></i>
               </a>
-              <a 
-                href='https://linkedin.com/in/john-doe'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
+              <a href='https://linkedin.com/in/john-doe'target='_blank'rel='noopener noreferrer'>
                 <i className='bi bi-linkedin'></i>
               </a>
             </div>
           </div>
           {/* Navigation */}
           <div className='col-md-4'>
-            <h5>Navigation</h5>
+            <h5>Liens utiles</h5>
             <ul className='list-unstyled'>
               <li><Link to='/'>Accueil</Link></li>
               <li><Link to='/services'>Services</Link></li>
@@ -49,11 +39,14 @@ function Footer () {
           </div>
           {/* Recent Projects */}
           <div className='col-md-4'>
-            <h5>Dernières Réalisations</h5>
+            <h5>Mes dernières réalisations</h5>
             <ul className='list-unstyled'>
-              <li><Link to='/portfolio'>Projet 1</Link></li>
-              <li><Link to='/portfolio'>Projet 2</Link></li>
-              <li><Link to='/portfolio'>Projet 3</Link></li>
+              <li><Link to='/portfolio'>Fresh Food</Link></li>
+              <li><Link to='/portfolio'>Restaurant Akira</Link></li>
+              <li><Link to='/portfolio'>Espace bien-être</Link></li>
+              <li><Link to='/portfolio'>SEO</Link></li>
+              <li><Link to='/portfolio'>Création d&apos;un API</Link></li>
+              <li><Link to='/portfolio'>Maquette d&apos;un site</Link></li>
             </ul>
           </div>
         </div>

@@ -1,38 +1,56 @@
 .footer {
-    padding: 3rem 0;
-  }
-  
-  .footer a {
-    color: #fff;
-    text-decoration: none;
-    opacity: 0.8;
-    transition: all 0.3s ease;
-  }
-  
-  .footer a:hover {
-    opacity: 1;
-    color: #fff;
-  }
-  
-  .social-links {
-    margin-top: 1.5rem;
-  }
-  
-  .social-links a {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-  }
-  
-  .footer h5 {
-    color: #fff;
-    margin-bottom: 1.5rem;
-  }
-  
-  .footer ul li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .footer p {
-    opacity: 0.8;
-    margin-bottom: 0.5rem;
-  }
+  width: 100%;
+  background-color: #212529;
+  padding: 1rem 0;  /* Reduced padding */
+  font-size: 0.8rem;
+  margin-top: auto;
+}
+
+.footer .col-md-4 {
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.social-links {
+  margin-top: 0.5rem;  /* Reduced margin */
+}
+
+.social-links a {
+  font-size: 1rem;  /* Smaller font size */
+  margin-right: 0.75rem;  /* Reduced margin */
+  color: #fff;
+}
+
+.footer h5 {
+  color: #fff;
+  margin-bottom: 0.5rem;  /* Reduced margin */
+  font-size: 0.9rem;  /* Smaller font size */
+}
+
+.footer ul {
+  padding-left: 0;
+  margin-bottom: 0.5rem;  /* Added margin bottom */
+}
+
+.footer ul li {
+  margin-bottom: 0.25rem;  /* Reduced margin */
+  list-style: none;
+}
+
+.footer p {
+  color: #fff;
+  opacity: 0.8;
+  margin-bottom: 0.25rem;  /* Reduced margin */
+}

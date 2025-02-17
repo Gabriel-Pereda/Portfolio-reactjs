@@ -1,0 +1,27 @@
+.language-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .language-tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    background-color: #e9ecef;
+    color: #495057;
+    border-radius: 15px;
+    display: inline-block;
+  }
+
+  .languages-container {
+    background-color: #dadada;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    color: #6c757d;
+    text-align: center;
+  }
+  
+  .card:hover .languages-container {
+    background-color: #e9ecef;
+  }
