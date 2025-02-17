@@ -19,6 +19,7 @@ Portfolio professionnel développé avec React.js, présentant mes compétences,
 - React Icons
 - React Helmet
 - CSS personnalisé
+npm install react-icons prop-types
 
 ## Installation
 
